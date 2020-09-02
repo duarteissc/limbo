@@ -84,9 +84,9 @@ a {
         .site-navbar.bg-light .navbar-brand {
           display: inline-block;
           font-size: 18px;
-          border: 2px solid #000;
+          border: 2px solid #fff;
           padding: 2px 10px !important;
-          color: #000; } }
+          color: #fff; } }
   .site-navbar .navbar-nav > li > a {
     color: #fff !important;
     font-size: 14px;
@@ -97,7 +97,7 @@ a {
     letter-spacing: .2em; }
     @media (max-width: 991.98px) {
       .site-navbar .navbar-nav > li > a {
-        color: rgba(0, 0, 0, 0.7) !important; } }
+        color: #fff !important; } }
   .site-navbar .navbar-nav.active > a {
     color: #bac964 !important; }
   .site-navbar.scrolled {
@@ -117,7 +117,7 @@ a {
     .site-navbar.scrolled .navbar-brand {
       display: inline-block;
       font-size: 18px;
-      border: 2px solid #000;
+      border: 2px solid #fff;
       padding: 2px 10px !important; }
     .site-navbar.scrolled.awake, .site-navbar.scrolled.sleep {
       -webkit-transition: .3s all ease;
@@ -132,19 +132,19 @@ a {
       -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
       transform: translateY(-100%);
-      background: #000 !important; }
+      background: #fff !important; }
     .site-navbar.scrolled .navbar-brand {
-      color: #000; }
+      color: #fff; }
     .site-navbar.scrolled .dropdown > a:before {
       color: #Fff }
     .site-navbar.scrolled .navbar-nav > li > a {
       color: #Fff !important; }
       .site-navbar.scrolled .navbar-nav > li > a:hover {
-        color: #000 !important; }
+        color: #fff !important; }
       .site-navbar.scrolled .navbar-nav > li > a.active {
-        color: #000!important; }
+        color: #fff!important; }
     .site-navbar.scrolled .navbar-nav > li.active > a {
-      color: #000!important; }
+      color: #fff!important; }
 
 .site-hero {
   background-color: #ccc;
