@@ -1,7 +1,4 @@
 body {
-  background: #fff;
-  background: #fff;
-  line-height: 1.7;
   font-size: 16px;
   font-weight: 300; }
 
@@ -82,7 +79,7 @@ a {
     background: transparent !important; }
     @media (max-width: 991.98px) {
       .site-navbar.bg-light {
-        background: #fff !important;
+        background: #ff8201  !important;
         top: 0; }
         .site-navbar.bg-light .navbar-brand {
           display: inline-block;
@@ -197,7 +194,6 @@ a {
   .section-heading h2 {
     position: relative;
     font-weight: 200;
-    padding-top: 20px;
     font-size: 30px; }
     .section-heading h2 strong {
       font-weight: 800; }
@@ -212,7 +208,7 @@ a {
   line-height: 1.5; }
 
 .site-service-item {
-  background: #333;
+  background: #fff;
   padding: 30px; }
   .site-service-item .icon {
     display: block;
