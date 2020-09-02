@@ -1,7 +1,6 @@
 body {
   background: #fff;
-  color: rgba(255, 255, 255, 0.4);
-  background: #222;
+  background: #fff;
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300; }
@@ -23,16 +22,25 @@ body {
   color: #fff; }
 
 ::selection {
-  background: #000;
-  color: #fff; }
+  background: #000; }
 
 ::-moz-selection {
   background: #000;
   color: #fff; }
 
-h1, h2, h3, h4, h5 {
-  color: #fff;
-  font-weight: 200; }
+
+h4, strong {
+    font-size: 16px;
+    font-family: 'deathe_maach',sans-serif;
+    
+    Color: #424242}
+  .articulos{
+    Color: #424242;
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: 'deathe_maach',sans-serif;
+    
+    }
 
 h2 {
   font-size: 25px; }
@@ -180,10 +188,10 @@ a {
     color: rgba(255, 255, 255, 0.5); }
 
 .site-section {
-  padding: 5em 0; }
+  padding: 2em 0; }
 
 .section-heading {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
   z-index: 10; }
   .section-heading h2 {
@@ -330,10 +338,10 @@ a {
   margin-bottom: 50px;
   display: block; }
   .single-portfolio .relative {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .single-portfolio .p-inner {
     text-align: center; }
-    .single-portfolio .p-inner h4 {
+    .single-portfolio .p-inner{
       font-size: 20px; }
     .single-portfolio .p-inner .cat {
       font-size: 12px;
