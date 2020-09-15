@@ -35,8 +35,9 @@
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="#section-home"  onclick="MenuInicio()" ><b>INICIO</b></a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-portfolio"  onclick="MenuServicios()" ><b>SERVICIO</b></a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-resume" onclick="MenuArticulos()"><b>ARTICULOS</b></a></li>
+					<li class="nav-item"><a class="nav-link" onclick="MenuServicios()" ><b>SERVICIO</b></a></li>
+          <li class="nav-item"><a class="nav-link" onclick="MenuArticulos()"><b>ARTICULOS</b></a></li>
+          <li class="nav-item"><a class="nav-link" id="salir"><b>Cerrar Sesión</b></a></li>
 				</ul>
 			</div>
 		</div>
@@ -266,6 +267,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 <script>
   // Your web app's Firebase configuration
@@ -280,6 +282,7 @@ for (i = 0; i < coll.length; i++) {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
   const db = firebase.firestore();
 </script>
 <script src="js/admin_limbo.js"></script>

@@ -305,3 +305,14 @@ function EditarPaqueteServicio(ideditar){
     menuinicio.forEach( item => item.style.display = 'none');
     menuarticulos.forEach( item => item.style.display = 'block');
   }
+
+  
+auth.onAuthStateChanged( user =>{
+  if(user){
+      console.log( "Estas Dentro")
+  }
+  else {
+    console.log( "Estas Fuera")
+    location.href ="https://duarteissc.github.io/limbo/login.html";
+  }
+});

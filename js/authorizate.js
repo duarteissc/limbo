@@ -2,8 +2,8 @@
 
 auth.onAuthStateChanged( user =>{
     if(user){
-        alert("Estas dentro3")
         location.href ="https://duarteissc.github.io/limbo/pruebas.html";
+        console.log( "Bienvenido ")
     }
     else {
         console.log( "Estas Fuera")
@@ -24,10 +24,10 @@ formaingresar.addEventListener('submit', (e)=>{
         console.log(cred);
         formaingresar.reset();
         formaingresar.querySelector('.error').innerHTML='';     //mensaje de error
-        alert("estas adentro")
+        console.log("Bienvenido");
 
     }).catch( err => {
-        alert("ocurrio error")
+
         formaingresar.querySelector('.error').innerHTML=mensajeError(err.code);
         console.log( err)
     });
@@ -64,7 +64,7 @@ salir.addEventListener('click', (e)=>{
     e.preventDefault();
 
     auth.signOut().then( ()=>{
-        alert('El usuario ha salido del sistema');
+        location.href ="https://duarteissc.github.io/limbo/login.html";
     });
 });
 
