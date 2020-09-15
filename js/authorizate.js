@@ -2,7 +2,7 @@
 
 auth.onAuthStateChanged( user =>{
     if(user){
-        alert("Estas dentro")
+        alert("Estas dentro2")
         window.locationf="https://duarteissc.github.io/limbo/pruebas.html";
     }
     else {
