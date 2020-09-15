@@ -2,8 +2,8 @@
 
 auth.onAuthStateChanged( user =>{
     if(user){
-        alert("Estas dentro2")
-        window.locationf="https://duarteissc.github.io/limbo/pruebas.html";
+        alert("Estas dentro3")
+        location.href ="https://duarteissc.github.io/limbo/pruebas.html";
     }
     else {
         console.log( "Estas Fuera")
@@ -20,7 +20,7 @@ formaingresar.addEventListener('submit', (e)=>{
     let contrasena = formaingresar['contrasena'].value;
 
     auth.signInWithEmailAndPassword(correo,contrasena).then( cred =>{
-        window.locationf="https://duarteissc.github.io/limbo/pruebas.html";
+        location.href ="https://duarteissc.github.io/limbo/pruebas.html";
         console.log(cred);
         formaingresar.reset();
         formaingresar.querySelector('.error').innerHTML='';     //mensaje de error
