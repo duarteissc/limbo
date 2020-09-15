@@ -1,10 +1,12 @@
+
+
 auth.onAuthStateChanged( user =>{
     if(user){
-        alert("estas adentro")
+        alert("Estas dentro")
     }
     else {
+        console.log( "Estas Fuera")
     }
-    alert("estas fuerax")
 });
 
 
@@ -17,8 +19,8 @@ formaingresar.addEventListener('submit', (e)=>{
     let contrasena = formaingresar['contrasena'].value;
 
     auth.signInWithEmailAndPassword(correo,contrasena).then( cred =>{
+        window.locationf="https://duarteissc.github.io/limbo/pruebas.html";
         console.log(cred);
-        $('#ingresarmodal').modal('hide'); //cerrar la ventana del modal Ingresar
         formaingresar.reset();
         formaingresar.querySelector('.error').innerHTML='';     //mensaje de error
         alert("estas adentro")
@@ -64,4 +66,6 @@ salir.addEventListener('click', (e)=>{
         alert('El usuario ha salido del sistema');
     });
 });
+
+
 
