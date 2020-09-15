@@ -58,15 +58,5 @@ function mensajeError(codigo){
     return mensaje;
 } 
 
-const salir = document.getElementById('salir');
-
-salir.addEventListener('click', (e)=>{
-    e.preventDefault();
-
-    auth.signOut().then( ()=>{
-        location.href ="https://duarteissc.github.io/limbo/login.html";
-    });
-});
-
 
 
