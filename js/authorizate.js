@@ -3,6 +3,7 @@
 auth.onAuthStateChanged( user =>{
     if(user){
         alert("Estas dentro")
+        window.locationf="https://duarteissc.github.io/limbo/pruebas.html";
     }
     else {
         console.log( "Estas Fuera")
