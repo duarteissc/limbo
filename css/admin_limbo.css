@@ -1,0 +1,39 @@
+.dnav {
+    background-color: #F4671C;
+    color: #Fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .dnav:hover {
+    background-color: #ff8201;
+    color: #Fff;
+  }
+  .card-header{
+    background-color: #Fff;
+  }
+  
+  .dnav:after {
+    content: '\002B';
+    color: #Fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: yellow;
+  }

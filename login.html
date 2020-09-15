@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+       	 <!-- Referencias  -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+</head>
+<body>
+    <a class="nav-link" href="#" id="salir">Salir</a>
+
+    <form id="formaingresar">
+        <div class="row">
+            <div class="col-12 form-group">
+                <input type="email" id="correo" class="form-control" placeholder="Ingresa tu correo"
+                    required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 form-group">
+                <input type="password" id="contrasena" class="form-control"
+                    placeholder="Ingresa tu contraseña" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="btn btn-info btn-block btn-round">Ingresar</button>
+                <p class="error text-danger"></p>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6ybtyQKH8Cppf-WKL0d01Sc9JtHQuoCo",
+  authDomain: "limbopublicidad-fe169.firebaseapp.com",
+  databaseURL: "https://limbopublicidad-fe169.firebaseio.com",
+  projectId: "limbopublicidad-fe169",
+  storageBucket: "limbopublicidad-fe169.appspot.com",
+  messagingSenderId: "193282550057",
+  appId: "1:193282550057:web:83434dfe55254fc9bdef38"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="js/authorizate.js"></script>
+</body>
+</html>

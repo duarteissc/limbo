@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   	 <!-- Referencias  -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+      
+      <link rel="stylesheet" href="css/admin_limbo.css">
+      <style>
+        .menu-editar-servicio,.menu-servicio,.menu-articulos{
+            display:none;
+  } 
+ 
+    
+   </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" style=" background-color: #FCA248;" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home"  onclick="MenuInicio()" ><b>INICIO</b></a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio"  onclick="MenuServicios()" ><b>SERVICIO</b></a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume" onclick="MenuArticulos()"><b>ARTICULOS</b></a></li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+ <!-- Editar Inicio -->
+  <div class="menu-inicio">
+    <p>Inicio</p>
+</div>
+
+      <!-- SERVICIOS -->
+      <div id="accordion"> 
+<div class="menu-servicio">
+        
+          <div class="card ">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0"  >
+                <button class="btn collapsed btn-block dnav"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Agregar Servicio
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row"> 
+                  <div class="col-lg-12">   
+                    <form>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Nombre:</span>
+                          </div>
+                          <input type="text" class="form-control" id="sidplatilloNombre" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                      </div>
+              
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Descripcion:</span>
+                          </div>
+                          <input  class="form-control" id="sidplatilloDescripcion" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                          type="text" >
+                      </div>
+            
+              
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend" >
+                          <label class="input-group-text form-control" for="sinputGroupSelect02">Mejor evaluado:</label>
+                          </div>
+                          <select class="custom-select" id="sinputGroupSelect02" >
+                          <option selected>selecciona</option>
+                          <option value="Activado">Activado</option>
+                          <option value="Desactivado">Desactivado</option>
+                          </select>
+                      </div>
+              
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend" >
+                          <label class="input-group-text form-control" for="sinputGroupSelect03">Estatus novedad:</label>
+                          </div>
+                          <select class="custom-select" id="sinputGroupSelect03" >
+                          <option selected>selecciona</option>
+                          <option value="Activado">Activado</option>
+                          <option value="Desactivado">Desactivado</option>
+                          </select>
+                      </div>
+              
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend" >
+                          <label class="input-group-text form-control" for="sinputGroupSelect04">Popularidad:</label>
+                          </div>
+                          <select class="custom-select" id="sinputGroupSelect04" >
+                          <option selected>selecciona</option>
+                          <option value="Activado">Activado</option>
+                          <option value="Desactivado">Desactivado</option>
+                          </select>
+                      </div>
+                
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend" >
+                        <label class="input-group-text form-control" for="sinputGroupSelect01">Estatus:</label>
+                        </div>
+                        <select class="custom-select" id="sinputGroupSelect01" >
+                        <option selected>selecciona</option>
+                        <option value="Disponible">Disponible</option>
+                        <option value="No disponible">No disponible</option>
+                        </select>
+                    </div>
+                      <button type="button" class="btn btn-primary btn-block" onclick="RegistrarServicio()">Agregar  servicio</button>
+                      </form>
+                      </div>  
+                  </div> 
+              </div>
+            </div>
+          </div>     
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn collapsed dnav" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                 Servicios
+                </button>
+              </h5>
+            </div>                 
+            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row" id="listadeservicios">
+                </div>
+              </div>
+            </div>
+          </div>  
+</div>
+   	 <!-- SERVICIOS 2-->
+<div class="menu-editar-servicio">
+<div style="text-align: center;">Id Servicio: <a id="idservicioid"> No hay id</a></div>  
+
+<div class="card">
+  <div class="card-header" id="headingOne">
+    <h5 class="mb-0">
+      <button class="btn collapsed btn-block dnav" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Editar servicio
+      </button>
+    </h5>
+  </div>
+  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+    <div class="card-body">
+      <div class="row" id="servicioeditar">               
+            
+      </div>
+    
+    </div>
+    </div>
+  </div>
+<div class="card ">
+  <div class="card-header" id="headingTwo">
+    <h5 class="mb-0"  >
+      <button class="btn collapsed btn-block dnav"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Paquete | Agregar Editar Eliminar
+      </button>
+    </h5>
+  </div>
+  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div class="card-body">
+      <div class="row"> 
+        <div class="col-lg-12">   
+          <div id="paquetenombre"></div>                                     
+            <form>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Servicio nombre:</span>
+                </div>
+                <input type="text" class="form-control" id="paquetenombreid" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+              </div>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Costo unico:</span>
+                </div>
+                <input  class="form-control" id="paquetecostounico" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                type="text" >
+            </div>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Costo por hora:</span>
+                </div>
+                <input type="text" class="form-control" id="paquetecostoxhora" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>     
+            <div class="input-group mb-2">
+                <div class="input-group-prepend" >
+                <label class="input-group-text form-control" for="inputGroupSelect01">Estatus:</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01" >
+                <option selected value="Disponible">Disponible</option>
+                <option value="No disponible">No disponible</option>
+                </select>
+            </div>
+            <div  id="paqueteserviciocrud" style="text-align: center;">
+              <button class="btn btn-primary " type="button" onclick="Notificacion()" style="width: 32%;">Eliminar</button>
+    
+              <button class="btn btn-primary" type="button" onclick="Notificacion()" style="width: 32%;">Editar</button>
+                        
+              <button class="btn btn-primary " type="button" onclick="RegistrarPaqueteServicio()" style="width: 32%;">Agregar</button>
+              
+    
+            </div>
+            </form>
+            </div>  
+        </div> 
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header" id="headingThree">
+    <h5 class="mb-0">
+      <button class="btn collapsed dnav" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+       Lista de paquetes
+      </button>
+    </h5>
+  </div>
+<div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+  <div class="card-body">
+  <div class="row" id="listadeplatillos">
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ <!-- ARTICULOS -->
+<div class="menu-articulos">
+  <p>Articulos</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6ybtyQKH8Cppf-WKL0d01Sc9JtHQuoCo",
+  authDomain: "limbopublicidad-fe169.firebaseapp.com",
+  databaseURL: "https://limbopublicidad-fe169.firebaseio.com",
+  projectId: "limbopublicidad-fe169",
+  storageBucket: "limbopublicidad-fe169.appspot.com",
+  messagingSenderId: "193282550057",
+  appId: "1:193282550057:web:83434dfe55254fc9bdef38"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+<script src="js/admin_limbo.js"></script>
+</body>
+</html>
+
+
