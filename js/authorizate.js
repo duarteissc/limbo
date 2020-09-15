@@ -4,7 +4,7 @@ auth.onAuthStateChanged( user =>{
     }
     else {
     }
-    alert("estas fuera")
+    alert("estas fuerax")
 });
 
 
