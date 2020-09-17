@@ -14,7 +14,9 @@ const serviciotodosdetalle = document.getElementById('detalleservicio');
 
 
 window.onload =  obtenertodosservicios;
-
+function inicio(){
+  location.href = "https://duarteissc.github.io/limbo/index.html";
+}
 
 //ObtenerRestaurantesInicio
 function obtenertodosservicios() {
