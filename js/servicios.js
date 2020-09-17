@@ -140,7 +140,6 @@ function obtenertodosservicios() {
         <div class="col-md-6 col-12 col-lg-8 mb-2">
         <h3 >${servicio.servicio}</h3>
         <p>${servicio.descripcion}</p>
-        <p>${servicio.costos}</p>
         </div>
         <div class="col-md-4 col-12 col-lg-4 text-center mb-2">
             <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-top:6px; margin-right:0px">
