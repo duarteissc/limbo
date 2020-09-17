@@ -26,9 +26,9 @@ function obtenertodosservicios() {
           const servicio = doc.data();
           const columna = `       
           <div class="col-md-6 col-6 col-lg-2 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')">
-          <div class="site-service-item site-animate" data-animate-effect="fadeIn" >
+          <div class="site-service-item site-animate text-center" data-animate-effect="fadeIn" >
               <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style="border-radius: 50%; margin-bottom:10px" ></a>
-              <h3 class="mb-3" >${servicio.servicio}</h3>
+              <h2> <strong>${servicio.servicio}</strong></h2>
               </div>
          </div>
             `;
@@ -110,7 +110,7 @@ function obtenertodosservicios() {
           <div class="col-md-6 col-6 col-lg-2 text-center mb-2 href="#" onclick="DetalleSer('${doc.id}')">
           <div class="site-service-item site-animate" data-animate-effect="fadeIn">
               <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style="border-radius: 50%; margin-bottom:10px"></a>
-              <h3 class="mb-3">${servicio.servicio}</h3>
+              <h3 >${servicio.servicio}</h3>
               </div>
          </div>
             `;
@@ -137,13 +137,14 @@ function obtenertodosservicios() {
         if (doc.exists) {
         const servicio = doc.data();
         const columna = `
+        <div class="col-md-4 col-12 col-lg-4 text-center mb-2">
+        <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-top:6px; margin-right:0px">
+   </div>
         <div class="col-md-6 col-12 col-lg-8 mb-2">
         <h3 >${servicio.servicio}</h3>
         <p>${servicio.descripcion}</p>
         </div>
-        <div class="col-md-4 col-12 col-lg-4 text-center mb-2">
-            <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-top:6px; margin-right:0px">
-       </div>
+       
         `;            
         html += columna;
 
