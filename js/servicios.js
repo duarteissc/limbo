@@ -18,7 +18,7 @@ window.onload =  obtenertodosservicios;
 
 //ObtenerRestaurantesInicio
 function obtenertodosservicios() {
-    db.collection("limboservicios").where("estatus", "==", "1")
+    db.collection("limboservicios").where("estatus", "==", "Disponible")
     .get()
   .then(querySnapshot => {
     let html = ''
@@ -45,7 +45,7 @@ function obtenertodosservicios() {
     );
   };
   function obtenerserviciosmejorevaluados() {
-    db.collection("limboservicios").where("estatusmejorevaluados", "==", "1").where("estatus", "==", "1")
+    db.collection("limboservicios").where("estatusmejorevaluados", "==", "Activado").where("estatus", "==", "Activado")
     .get()
   .then(querySnapshot => {
     let html = ''
@@ -73,7 +73,7 @@ function obtenertodosservicios() {
     );
   };
   function obtenerserviciospopulares() {
-    db.collection("limboservicios").where("estatuspopulares", "==", "1").where("estatus", "==", "1")
+    db.collection("limboservicios").where("estatuspopulares", "==", "Activado").where("estatus", "==", "Activado")
     .get()
   .then(querySnapshot => {
     let html = ''
@@ -100,7 +100,7 @@ function obtenertodosservicios() {
     );
   };
   function obtenerserviciosnuevos() {
-    db.collection("limboservicios").where("estatusnuevos", "==", "1").where("estatus", "==", "1")
+    db.collection("limboservicios").where("estatusnuevos", "==", "Activado").where("estatus", "==", "Activado")
     .get()
   .then(querySnapshot => {
     let html = ''
