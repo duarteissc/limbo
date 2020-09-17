@@ -842,3 +842,15 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+#bhover {
+  transition-duration: 0.4s;
+}
+
+#bhover:hover { /* Green */
+  color: #303030;
+}
+#bhover2:hover {
+  background-color: #ff8201; /* Green */
+}
