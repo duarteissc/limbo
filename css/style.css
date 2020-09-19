@@ -79,7 +79,7 @@ a {
     background: transparent !important; }
     @media (max-width: 991.98px) {
       .site-navbar.bg-light {
-        background: #ff8201  !important;
+        background: transparent !important;
         top: 0; }
         .site-navbar.bg-light .navbar-brand {
           display: inline-block;
@@ -113,7 +113,7 @@ a {
     -ms-transform: translateY(0%);
     transform: translateY(0%); }
     .site-navbar.scrolled.bg-light {
-      background: #ff8201 !important; }
+      background: #FB9126 !important; }
     .site-navbar.scrolled .navbar-brand {
       display: inline-block;
       font-size: 18px;
@@ -852,5 +852,5 @@ a {
   color: #303030;
 }
 #bhover2:hover {
-  background-color: #ff8201; /* Green */
+  background-color: #FEA729; /* Green */
 }
