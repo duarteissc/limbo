@@ -28,11 +28,12 @@ function obtenertodosservicios() {
           const servicio = doc.data();
           const columna = `       
 
-
-          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')";>   
+         
+          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2"  onclick="DetalleSer('${doc.id}'); ">   
+          <a  href="#section-home">
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="images/p1.jpg"  class="img-fluid" alt="image">
+          <img src="./imagenes/${servicio.img}"  class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -43,7 +44,9 @@ function obtenertodosservicios() {
           <div> <a style="float: left; font-size: 14px;font-family: sans-serif; Color: #424242;">Leon, Gto.</a></div>
           </div>
           </div>
-      </div>
+      
+      
+          </a>    </div>
             `;
           html += columna;
         });
@@ -66,10 +69,10 @@ function obtenertodosservicios() {
           const servicio = doc.data();
           const columna = `       
          
-          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')";>   
+          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#section-home" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="images/p1.jpg"  class="img-fluid" alt="image">
+          <img src="./imagenes/${servicio.img}"   class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -104,10 +107,10 @@ function obtenertodosservicios() {
           const servicio = doc.data();
           const columna = `       
          
-          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')";>   
+          <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#section-home" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="images/p1.jpg"  class="img-fluid" alt="image">
+          <img src="./imagenes/${servicio.img}"   class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -144,7 +147,7 @@ function obtenertodosservicios() {
           <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="images/p1.jpg"  class="img-fluid" alt="image">
+          <img src="./imagenes/${servicio.img}"  class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -183,11 +186,11 @@ function obtenertodosservicios() {
         
 
 
-        <div class="col-md-4 col-12 col-lg-4 text-center mb-2">
+        <div class="col-md-4 col-12 col-lg-4 text-center mb-2"   >
         <div class="wrapper mb-2";>   
         <div class="card radius shadowDepth1">
         <div class="card__image">
-        <img src="images/p1.jpg" alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-right:0px">
+        <img src="./imagenes/${servicio.img}"  alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-right:0px">
         </div>
    </div>
    </div>

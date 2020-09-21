@@ -787,8 +787,7 @@ a {
     .footer-distributed .footer-right{
         display: block;
         width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
+        margin-bottom: 30px;
     }
  
     .footer-distributed .footer-center i{
