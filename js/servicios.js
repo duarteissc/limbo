@@ -33,7 +33,7 @@ function obtenertodosservicios() {
           <a  href="#section-home">
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="./imagenes/${servicio.img}"  class="img-fluid" alt="image">
+          <img src="./images/${servicio.img}"  class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -72,7 +72,7 @@ function obtenertodosservicios() {
           <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#section-home" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="./imagenes/${servicio.img}"   class="img-fluid" alt="image">
+          <img src="./images/${servicio.img}"   class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -110,7 +110,7 @@ function obtenertodosservicios() {
           <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#section-home" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="./imagenes/${servicio.img}"   class="img-fluid" alt="image">
+          <img src="./images/${servicio.img}"   class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -147,7 +147,7 @@ function obtenertodosservicios() {
           <div class="wrapper btn col-md-6 col-6 col-lg-3 text-center mb-2" href="#" onclick="DetalleSer('${doc.id}')";>   
           <div class="card radius shadowDepth1">
           <div class="card__image">
-          <img src="./imagenes/${servicio.img}"  class="img-fluid" alt="image">
+          <img src="./images/${servicio.img}"  class="img-fluid" alt="image">
           </div>
           <div class="card__content card__padding">         
           <div class="card__action"><h5><div href="#" style="font-family: sans-serif; Color: #424242;""><b>${servicio.servicio}</b></div></h6></div>
@@ -190,7 +190,7 @@ function obtenertodosservicios() {
         <div class="wrapper mb-2";>   
         <div class="card radius shadowDepth1">
         <div class="card__image">
-        <img src="./imagenes/${servicio.img}"  alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-right:0px">
+        <img src="./images/${servicio.img}"  alt="Image placeholder" class="img-fluid" style=" margin-bottom:0px; margin-right:0px">
         </div>
    </div>
    </div>
